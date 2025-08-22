@@ -15,7 +15,9 @@ pipeline {
     }
     stage('Install Dependencies') {
       steps {
-        sh 'npm install'
+        dir('node-js-sample') {
+            sh 'npm install'
+        }
       }
     }
     stage('Test') {
