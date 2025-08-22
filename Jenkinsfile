@@ -2,9 +2,14 @@ pipeline {
   agent any
 
   stages {
+    stage('Checkout Jenkinsfile Repo') {
+      steps {
+        checkout scm  
+      }
+    }
     stage('pull'){
         steps{
-            git branch: 'main', url: 'https://github.com/Vaishnavi-M-Patil/node-js-sample.git'
+            git branch: 'main', url: 'https://github.com/Vaishnavi-M-Patil/studentdata.git'
             echo "pull successful"
         }
     }
