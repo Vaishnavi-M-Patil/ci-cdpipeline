@@ -9,7 +9,7 @@ pipeline {
     }
     stage('pull'){
         steps{
-            git branch: 'main', url: 'https://github.com/Vaishnavi-M-Patil/studentdata.git'
+            git branch: 'main', url: 'https://github.com/Vaishnavi-M-Patil/node-js-sample.git'
             echo "pull successful"
         }
     }
