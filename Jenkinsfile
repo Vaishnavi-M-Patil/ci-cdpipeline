@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent {label 'nginx-server'}
 
   stages {
     stage('Checkout Jenkinsfile Repo') {
